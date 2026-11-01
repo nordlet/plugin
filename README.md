@@ -32,7 +32,7 @@ claude plugin marketplace add nordlet/plugin
 claude plugin install nordlet@nordlet
 ```
 
-Claude Code then asks for your **Nordlet API key** (`nl_...`). Create one in the Nordlet app under Account → API keys. The key is stored in your operating system's credential store, not in a settings file.
+Claude Code then asks for your **Nordlet API key** (`nl_...`). Owners, admins and developers create one in the Nordlet app under Account → Developers. The key is stored in your operating system's credential store, not in a settings file.
 
 To try the plugin from a local checkout without installing it:
 
@@ -44,7 +44,7 @@ claude --plugin-dir /path/to/plugin
 
 - Every tool call is an HTTPS request to `api.nordlet.com` with your API key as the Bearer token. Nothing is sent anywhere else.
 - Each call is authenticated, rate limited (300 requests a minute per key) and metered like a direct API request.
-- The key is scoped to one company. A key with `*:read` scopes can only read; a mutating tool call (create, issue, register, import, match) changes that company's books.
+- One key works in every company you are a member of, with the rights of your role in each; every tool call names its company. A key with `*:read` scopes can only read; a mutating tool call (create, issue, register, import, match) changes the books of the company it names.
 
 ## Surfaces
 

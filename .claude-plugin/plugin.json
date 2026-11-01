@@ -1,7 +1,7 @@
 {
   "name": "nordlet",
   "displayName": "Nordlet Accounting",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Nordlet accounting API in Claude Code: the Nordlet MCP connector plus fifteen skills for the API conventions, invoicing, supplier bills, bank reconciliation, Revolut and Stripe imports, month-end close, VAT returns, debt collection, payroll, fixed assets, onboarding and migration, recurring billing, inventory and webhooks.",
   "author": {
     "name": "Nordlet",
@@ -20,7 +20,7 @@
     "api_key": {
       "type": "string",
       "title": "Nordlet API key",
-      "description": "A Nordlet API key (nl_...), scoped to one company. Create it in the Nordlet app under Account → API keys. Sent as the Bearer token on every call to https://api.nordlet.com/mcp.",
+      "description": "A Nordlet API key (nl_...). It works in every company you are a member of, with the rights of your role in each. Owners, admins and developers create it in the Nordlet app under Account → Developers. Sent as the Bearer token on every call to https://api.nordlet.com/mcp.",
       "sensitive": true,
       "required": true
     }

@@ -7,7 +7,7 @@ description: Work with a company's books in Nordlet through the nordlet MCP conn
 
 Nordlet is an accounting API. Every operation is `POST /v1/{module}/{resource}/{action}` with a JSON body. The `nordlet` MCP server exposes those operations as tools. Each tool call is an ordinary API request: it is authenticated with the plugin's API key, rate limited and metered like one, and a mutating call changes the company's books.
 
-The API key is scoped to one company. Every call acts on that company. To work on another company, the user needs a key of that company.
+The connection works in every company the user is a member of, with the rights of the user's role in each. Call `list_companies` first, then pass the company's id as `companyId` on every other tool call. When the user names a company, match it to the list; when the user has several companies and names none, ask which one.
 
 ## Tools
 
