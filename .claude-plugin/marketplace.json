@@ -1,0 +1,17 @@
+{
+  "name": "nordlet",
+  "description": "Nordlet Accounting plugin for Claude Code",
+  "owner": {
+    "name": "Nordlet",
+    "email": "hello@nordlet.cloud",
+    "url": "https://nordlet.com"
+  },
+  "plugins": [
+    {
+      "name": "nordlet",
+      "source": "./",
+      "description": "Nordlet accounting API in Claude Code: the MCP connector plus fifteen skills for the API conventions, invoicing, supplier bills, bank reconciliation, Revolut and Stripe imports, month-end close, VAT returns, debt collection, payroll, fixed assets, onboarding and migration, recurring billing, inventory and webhooks.",
+      "category": "accounting"
+    }
+  ]
+}
